@@ -44,9 +44,9 @@ There should be five files present:
 
 This is an example of an Infrastructure as Code tool.  Ruby is used as a declarative lanaguage to define the end-state of infrastructure.  There are three sections in the code that is each resposible for defining a particular server.
 
-**mongo.sh
-**mqtt.sh
-**nodered.sh
+* mongo.sh
+* mqtt.sh
+* nodered.sh
 
 These shell scripts are ran by Vagrant after the virtual machines are created.  There is a shell script for each server created.  These scripts install and configure the software for each platform.
 

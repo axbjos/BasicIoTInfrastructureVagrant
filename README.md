@@ -44,13 +44,15 @@ There should be five files present:
 
 This is an example of an Infrastructure as Code tool.  Ruby is used as a declarative lanaguage to define the end-state of infrastructure.  There are three sections in the code that is each resposible for defining a particular server.
 
+**Shell Scripts**
 * mongo.sh
 * mqtt.sh
 * nodered.sh
 
 These shell scripts are ran by Vagrant after the virtual machines are created.  There is a shell script for each server created.  These scripts install and configure the software for each platform.
 
-**mongod.conf
+**Mongo Config**
+* mongod.conf
 
 This file is transferred to the MongoDB server after the database is installed.  It has an update config that configures the server to bind to all network addresses.
 

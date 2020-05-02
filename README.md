@@ -6,9 +6,9 @@ Uses the Vagrant desktop hypervisor automation tool to create a basic IoT infras
 
 The Vagrant automation creates the following:
 
-Mosquitto MQTT Message Queue
-IBM Node-Red Flow/Event-Based Programming Tool
-MongdoDB NoSQL database for storing IoT data.
+* Mosquitto MQTT Message Queue
+* IBM Node-Red Flow/Event-Based Programming Tool
+* MongdoDB NoSQL database for storing IoT data.
 
 Any desktop hypervisor can be used: VirtualBox, VMware Workstation/Fusion, Hyper-V provided that Vagrant has a provider for it.  This automation code has been tested with MacOS/VMware Fusion and Windows/VirtualBox
 

@@ -1,4 +1,4 @@
-# Basic IoT Infrastructure Using Vagrant v1.0.0
+# Basic IoT Infrastructure Using Vagrant
 
 Uses the Vagrant desktop hypervisor automation tool to create a basic IoT infrastructure.
 

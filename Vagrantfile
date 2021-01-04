@@ -21,7 +21,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "nodered" do |nodered|
     nodered.vm.box = "ubuntu/bionic64"
-    nodered.vm.memory = 2048
     nodered.vm.network :forwarded_port, guest: 1880, host: 1880
     nodered.vm.provision :shell, path: "nodered1.sh"
     nodered.vm.provision :shell, privileged: false, path: "nodered2.sh"
@@ -40,7 +39,6 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "mongo" do |mongo|
     mongo.vm.box = "ubuntu/bionic64"
-    mongo.vm.memory = 2048
     mongo.vm.network :forwarded_port, guest: 27017, host: 27017 
     mongo.vm.provision "file", source: "mongod.conf", destination: "mongod.conf"
     mongo.vm.provision :shell, path: "mongo.sh"

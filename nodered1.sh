@@ -8,7 +8,7 @@
   
 curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 apt update
-apt install nodejs
+apt install -y nodejs
 
 sleep 1
 
@@ -21,3 +21,9 @@ sleep 1
 #install mongodb connector
 
 npm install -g --unsafe-perm node-red-node-mongodb
+
+sleep 1
+
+npm install -g --unsafe-perm node-red-dashboard
+
+npm install -g --unsafe-perm node-red-email

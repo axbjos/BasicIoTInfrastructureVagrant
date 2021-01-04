@@ -1,4 +1,5 @@
 # Basic IoT Infrastructure Using Vagrant
+Updated for latest MongoDB and NodeJS releases.
 
 Uses the Vagrant desktop hypervisor automation tool to create a basic IoT infrastructure.
 
@@ -12,11 +13,9 @@ The Vagrant automation creates the following:
 
 Any desktop hypervisor can be used: VirtualBox, VMware Workstation/Fusion, or Hyper-V provided that Vagrant has a provider for it.  This automation code has been tested with MacOS/VMware Fusion and Windows/VirtualBox
 
-If using VirtualBox I believe you must use VirtualBox 6.0.  Last I checked there were incompatibilities with Vagrant and VirtualBox 6.1.
-
 ## Infrastructure
 
-This automation will create three virtual machines each with 1GB RAM, 1 CPU, and 20GB HDD's.  Ensure your host has the resources to run all three VM's. You Dunwoody laptop should work awesomely. An alternative version of this automation will eventually be created to use a single VM.  Or modify this code to be single server yourself!
+This automation will create three virtual machines each with 1GB RAM, 1 CPU, and 20GB HDD's.  Ensure your host has the resources to run all three VM's. An alternative version of this automation will eventually be created to use a single VM.  Or modify this code to be single server yourself.
 
 All of the Virtual Machines will be created on the NAT virtual network on the host machine - providing internet access for installing software.  Each VM will also have a port forward created through the NAT gateway on the host.  Rather than dealing with and remembering three separate IP addresses for each VM, by doing a port forward from the host IP, the user only needs to use the local IP address of host for connecting to the services. 
 

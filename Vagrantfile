@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-#Vagrant Configure - Basic IoT Stack
+#Vagrant Configure - Basic IoT Stack - Separate VM's
 #mqtt message queue
 #node-red event/flow based application logic server
 #mongod NoSQL database for storing data

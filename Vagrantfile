@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
 
   config.vm.define "nodered" do |nodered|
     nodered.vm.box = "ubuntu/bionic64"
-    nodred.vm.memory = 2048
+    nodered.vm.memory = 2048
     nodered.vm.network :forwarded_port, guest: 1880, host: 1880
     nodered.vm.provision :shell, path: "nodered1.sh"
     nodered.vm.provision :shell, privileged: false, path: "nodered2.sh"
